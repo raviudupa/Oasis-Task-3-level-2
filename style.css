@@ -1,0 +1,147 @@
+body {
+    margin: 0 20vh;
+    min-width: 250px;
+    background-color: rgb(133, 228, 240);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*MArgins and padding from the list */
+ul{
+    margin: 5vh 4vh;
+    padding: 0;
+}
+
+/*Style the list items */
+ul li{
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 20px;
+    transition: 0.2s;
+    border: 3px solid rgb(104, 62, 188);
+    border-radius: 20px;
+
+    /*make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*set all odd list items to a different color */
+ul li:nth-child(odd){
+    background: #ffffff;
+}
+/* background-color on hover */
+ul li:hover{
+    background: #dfaaa7;
+}
+
+
+
+/* done the task */
+ul li.checked {
+    background: rgb(65, 64 ,64);
+    color:#ffffff;
+    text-decoration: line-through;
+}
+
+/* Add a checked */
+ul li.checked::before {
+    position: absolute;
+    content: '';
+    border-width: 0 2px 5px 0 !important;
+    border: 0 solid #ffffff;
+    top: 10px;
+    left: 15px;
+    transform: rotate(40deg);
+    height: 20px;
+    width: 5px;
+
+
+}
+/* Style the close buttom*/
+.close{
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px 10px 15px;
+
+}
+
+.close:hover {
+    background-color: #e61506;
+    color: white;
+    width: 5%;
+}
+
+/*heading*/
+.heading{
+    background-color: #e61506;
+    margin: 20px 0;
+    padding: 15px 20px;
+    text-align: center;
+    height: 200px;
+    border-radius: 60px;
+}
+
+
+div h2{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px;
+
+}
+
+/* Clear floats after Header*/
+.header::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/*Style the input*/
+input {
+    margin: 10px 40px;
+    padding: 10px;
+    border: none;
+    border-style: none;
+    border-radius: 15px;
+    width: 60%;
+    float: left;
+    font-size: 15px;
+}
+
+
+/*ADD button Here*/
+.addBtn{
+    margin: 50x;
+    padding: 30px;
+    width: 100px;
+    background: #dfaaa7;
+    color: rgb(36,31,31);
+    float:inline-start;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    border: radius 10px;
+
+}
+
+.addBtn:hover{
+     background-color: #555;
+    color: white;
+}
+
+
+
+
